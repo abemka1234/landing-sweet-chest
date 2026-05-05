@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 120px;
+    width: 1920px;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    font-size: 21px;
+    font-weight: 500;
+    position: absolute;
+    left: 370px;
+    top: 47px;
+}
+.adress{
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: 46px;
+    left:1099px;
+}
+.main-part{
+    background-image: url(../Media/background-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    height:100vh;
+    width:100vw;
+}
+.berry{
+    background-image: url(../Media/berry.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.phone{
+    width: 231px;
+    height: 51x;
+    left:1319px;
+    top:37px;
+    position: absolute;
+    display: flex;
+    flex-direction:row;
+}
+.phone-icon{
+    background-image: url(../Media/phone-icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:19px;
+    height:19px;
+    position: relative;
+    top:6px;
+    left:19px;
+    margin-right:15px;
+}
+.phone-text{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.phone-number{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 152%;
+}
+.header-line{
+    width: 1920px;
+    height: 0px;
+    border: 1px #7E868E solid;
+    opacity: 10%;
+}
+.main{
+    width: 647px;
+    height: 462px;
+    position: absolute;
+    top:307px;
+    left: 370px;
+}
+.main-text{
+    margin-bottom: 25px;
+}
+.main-order{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.main-text-info{
+    text-align: center;
+    vertical-align:middle;
+    padding: 10px 10px 10px 10px;
+    color: #2E363E;
+    font-size:11px;
+    font-weight: 400; 
+    width:112px;
+    height:17px;
+    border-radius: 5px;
+    background-color:#F2F6FA;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.main-text-title{
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+}
+.main-text-desc{
+    line-height: 148%;
+    font-size: 24px;
+    font-weight: 400;;
+}
+.catalog-button{
+    color: #2E363E;
+    padding: 30px 50px 30px 50px;
+    border-radius: 8px;
+    text-align: center;
+    vertical-align: middle;
+    height: 28px;
+    width: 177px;
+    line-height: 152%;
+    font-size: 18px;
+    font-weight:500;
+    background-color: #FED84C;
+}
+.catalog-desc{
+    padding-left:67px;
+    font-size: 15px;
+    padding-top:20px;
+    padding-bottom:20px;
+    width:210px;
+    font-weight: 400;
+    line-height: 160%;
+}
