@@ -39,9 +39,28 @@
     background-size: cover;
     position: absolute;
 }
+.leaf{
+    background-image: url(../Media/leaf.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.adress{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.adress-icon{
+    background-image: url(../Media/place.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:17px;
+    height:23px;
+    margin-right:12px;
+}
 .phone{
     width: 231px;
-    height: 51x;
+    height: 51px;
     left:1319px;
     top:37px;
     position: absolute;
@@ -49,14 +68,14 @@
     flex-direction:row;
 }
 .phone-icon{
-    background-image: url(../Media/phone-icon.png);
+    background-image: url(../Media/phone.png);
     background-repeat: no-repeat;
     background-size: cover;
     width:19px;
     height:19px;
     position: relative;
     top:6px;
-    left:19px;
+    left:5px;
     margin-right:15px;
 }
 .phone-text{
