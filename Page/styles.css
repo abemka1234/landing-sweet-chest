@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
 }
+
 .header{
     height: 120px;
     width: 1920px;
@@ -28,10 +29,9 @@
     background-image: url(../Media/background-main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Montserrat", sans-serif;
     color: white;
-    height:100vh;
-    width:100vw;
+    height:1294px;
+    width:1920px;
 }
 .berry{
     background-image: url(../Media/berry.png);
@@ -159,4 +159,92 @@
     width:210px;
     font-weight: 400;
     line-height: 160%;
+}
+.catalog{
+    width:1920px;
+    height:1926px;
+    background-color: #FFF;
+    color: #000;
+    align-items: center;
+    vertical-align: middle;
+}
+.catalog-info{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -1px;
+    text-align: center;
+    vertical-align: bottom;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+.catalog-cards{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    flex-wrap: wrap;
+}
+.catalog-card{
+    width: 380px;
+    height: 582px;
+    border-radius: 15px;
+    border:1px #F2F6FA solid;
+    margin: 10px;
+}
+.card-image{
+    width:380px;
+    height:245px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-desc{
+    padding: 50px 44px 50px 44px;
+}
+.product-name{
+    font-size:24px;
+    line-height: 143%;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.product-ingredients{
+    font-size:16px;
+    font-weight: 400;
+    line-height:150%;
+}
+.product-price{
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+.product-button{
+    color: #2E363E;
+    padding: 20px 40px 20px 40px;
+    border-radius: 8px;
+    text-align: center;
+    vertical-align: middle;
+    height: 28px;
+    width: 83px;
+    line-height: 152%;
+    font-size: 18px;
+    font-weight:500;
+    background-color: #FED84C;
+}
+.three-cards{
+    width:1180px;
+    height:582px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.three-cards:first-child{
+    margin-top: 50px;
 }
