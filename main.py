@@ -32,7 +32,7 @@ def home():
         msg.body = f"Имя клиента: {username} Телефонный номер: {phone} Описание заказа: {discription}"
         mail.send(msg)
         return "Заказ отправлен."
-    return render_template("form.html")
+    return render_template("index.html")
 
 if __name__ == '__main__':
     app.run(debug=True) # Запуск в режиме отладки
