@@ -248,3 +248,48 @@ body{
 .three-cards:first-child{
     margin-top: 50px;
 }
+.reviews{
+    width: 1920px;
+    height: 1545px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.review-header{
+    display: flex;
+    flex-direction:column;
+    width: 938px;
+    height: 109px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.review-topic{
+    width: max-content;
+    font-weight: 500;
+    font-size: 48px;
+}
+.review-desc{
+    font-weight: 400;
+    width: max-content;
+    font-size: 24px;
+}
+.review-photo{
+    height:444px;
+    width:634px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px;
+}
+.cloud{
+    height:284px;
+    width: 1920px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.three-photos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
