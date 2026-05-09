@@ -391,3 +391,15 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.rules-checkbox{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-top: 15px;
+}
+.rules-text{
+    color:#7E868E;
+    line-height: 130%;
+    font-size:11px;
+    font-weight: 400;
+}
