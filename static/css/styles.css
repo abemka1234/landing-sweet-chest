@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 120px;
+    width: 1920px;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    font-size: 21px;
+    font-weight: 500;
+    position: absolute;
+    left: 370px;
+    top: 47px;
+}
+.adress{
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute;
+    top: 46px;
+    left:1099px;
+}
+.main-part{
+    background-image: url(../css/Media/other_image/background-main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height:1294px;
+    width:1920px;
+}
+.berry{
+    background-image: url(../css/Media/other_image/berry.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.leaf{
+    background-image: url(../css/Media/other_image/leaf.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.adress{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.adress-icon{
+    background-image: url(../css/Media/other_image/place.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:17px;
+    height:23px;
+    margin-right:12px;
+}
+.phone{
+    width: 231px;
+    height: 51px;
+    left:1319px;
+    top:37px;
+    position: absolute;
+    display: flex;
+    flex-direction:row;
+}
+.phone-icon{
+    background-image: url(../css/Media/other_image/phone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:19px;
+    height:19px;
+    position: relative;
+    top:6px;
+    left:5px;
+    margin-right:15px;
+}
+.phone-text{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.phone-number{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 152%;
+}
+.header-line{
+    width: 1920px;
+    height: 0px;
+    border: 1px #7E868E solid;
+    opacity: 10%;
+}
+.main{
+    width: 647px;
+    height: 462px;
+    position: absolute;
+    top:307px;
+    left: 370px;
+}
+.main-text{
+    margin-bottom: 25px;
+}
+.main-order{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.main-text-info{
+    text-align: center;
+    vertical-align:middle;
+    padding: 10px 10px 10px 10px;
+    color: #2E363E;
+    font-size:11px;
+    font-weight: 400; 
+    width:112px;
+    height:17px;
+    border-radius: 5px;
+    background-color:#F2F6FA;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.main-text-title{
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 24px;
+}
+.main-text-desc{
+    line-height: 148%;
+    font-size: 24px;
+    font-weight: 400;;
+}
+.catalog-button{
+    color: #2E363E;
+    padding: 30px 50px 30px 50px;
+    border-radius: 8px;
+    text-align: center;
+    vertical-align: middle;
+    height: 28px;
+    width: 177px;
+    line-height: 152%;
+    font-size: 18px;
+    font-weight:500;
+    background-color: #FED84C;
+}
+.catalog-desc{
+    padding-left:67px;
+    font-size: 15px;
+    padding-top:20px;
+    padding-bottom:20px;
+    width:210px;
+    font-weight: 400;
+    line-height: 160%;
+}
+.catalog{
+    width:1920px;
+    height:1926px;
+    background-color: #FFF;
+    color: #000;
+    align-items: center;
+    vertical-align: middle;
+}
+.catalog-info{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -1px;
+    text-align: center;
+    vertical-align: bottom;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+.catalog-cards{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    flex-wrap: wrap;
+}
+.catalog-card{
+    width: 380px;
+    height: 582px;
+    border-radius: 15px;
+    border:1px #F2F6FA solid;
+    margin: 10px;
+}
+.card-image{
+    width:380px;
+    height:245px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-desc{
+    padding: 50px 44px 50px 44px;
+}
+.product-name{
+    font-size:24px;
+    line-height: 143%;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.product-ingredients{
+    font-size:16px;
+    font-weight: 400;
+    line-height:150%;
+}
+.product-price{
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 15px;
+}
+.product-button{
+    color: #2E363E;
+    padding: 20px 40px 20px 40px;
+    border-radius: 8px;
+    text-align: center;
+    vertical-align: middle;
+    height: 28px;
+    width: 83px;
+    line-height: 152%;
+    font-size: 18px;
+    font-weight:500;
+    background-color: #FED84C;
+}
+.three-cards{
+    width:1180px;
+    height:582px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.three-cards:first-child{
+    margin-top: 50px;
+}
+.reviews{
+    width: 1920px;
+    height: 1545px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.review-header{
+    display: flex;
+    flex-direction:column;
+    width: 938px;
+    height: 109px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.review-topic{
+    width: max-content;
+    font-weight: 500;
+    font-size: 48px;
+}
+.review-desc{
+    font-weight: 400;
+    width: max-content;
+    font-size: 24px;
+}
+.review-photo{
+    height:444px;
+    width:634px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px;
+}
+.cloud{
+    height:284px;
+    width: 1920px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.three-photos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
