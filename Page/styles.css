@@ -815,8 +815,6 @@ body{
         overflow-x: hidden;
     }
 }
-
-/* ЭКРАНЫ 1201px И ВЫШЕ - улучшенная карусель */
 @media (min-width: 1201px) {
     .feedbacks-rolling {
         position: relative;
@@ -858,7 +856,6 @@ body{
     }
 }
 
-/* ЭКРАНЫ 921px - 1200px - СРЕДНИЕ РАЗМЕРЫ */
 @media (min-width: 921px) and (max-width: 1200px) {
     .feedbacks-rolling {
         position: relative;
@@ -982,7 +979,6 @@ body{
     }
 }
 
-/* ЭКРАНЫ 641px - 920px - УМЕНЬШЕННЫЕ РАЗМЕРЫ */
 @media (min-width: 641px) and (max-width: 920px) {
     .feedbacks-rolling {
         width: 100%;
@@ -1116,7 +1112,6 @@ body{
     }
 }
 
-/* ЭКРАНЫ ДО 640px - ТОЛЬКО ЦЕНТРАЛЬНЫЙ ОТЗЫВ */
 @media (max-width: 640px) {
     .feedbacks-rolling {
         width: 100%;
@@ -1201,7 +1196,6 @@ body{
     }
 }
 
-/* Остальные адаптивные стили */
 @media (max-width: 1200px) and (min-width: 641px) {
     .feedback-left,
     .feedback-right {
@@ -1514,8 +1508,6 @@ body{
 .feedbacks-button:last-child:hover .feedbacks-button-image {
     transform: translateX(3px);
 }
-
-/* ========== АДАПТИВНЫЕ РАЗМЕРЫ КНОПОК ========== */
 
 @media (max-width: 640px) {
     .feedbacks-rolling-buttons {
