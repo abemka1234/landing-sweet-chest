@@ -4,9 +4,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.8s ease-in-out;
+    overflow: hidden;
 }
 html{
-    overflow-x: hidden;
+    overflow-y: visible;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .header{
     height: 120px;
@@ -35,7 +42,7 @@ html{
     background-size: cover;
     color: white;
     height:1294px;
-    width:1920px;
+    width:100vw;
 }
 .berry{
     background-image: url(../Media/berry.png);
@@ -92,6 +99,12 @@ html{
     font-size: 20px;
     font-weight: 700;
     line-height: 152%;
+}
+.phone-desc{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 0%;
 }
 .header-line{
     width: 1920px;
@@ -174,8 +187,8 @@ html{
     line-height: 160%;
 }
 .catalog{
-    width:1920px;
-    height:1926px;
+    width:100vw;
+    height:max-content;
     background-color: #FFF;
     color: #000;
     justify-content: center;
@@ -193,12 +206,12 @@ html{
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top:-60px;
     left: 12px;
     word-break: break-word;
     overflow-wrap: break-word;
     text-align: center;
     max-width: 90vw;
+    margin-bottom: 30px;
 }
 body{
     font-family: "Montserrat", sans-serif;
@@ -208,17 +221,19 @@ body{
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    top:-45px;
+    justify-content: space-around;
+    margin-left: 15vw;
+    margin-right: 15vw;
 }
 .catalog-card{
-    width: 380px;
-    height: 582px;
+    width: 30%;
+    height: 40%;
     border-radius: 15px;
     border:1px #F2F6FA solid;
     margin: 10px;
 }
 .card-image{
-    width:380px;
+    width:100%;
     height:245px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -291,23 +306,9 @@ body{
     transform: translateY(2px);
     transition: 0.05s;
 }
-.three-cards{
-    width:1180px;
-    height:582px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-.three-cards:first-child{
-    margin-top: 50px;
-}
 .reviews{
     width: 1920px;
-    height: 1545px;
+    height: max-content;
     background-color: #FFF;
     display: flex;
     align-items: center;
@@ -318,19 +319,18 @@ body{
 .review-header{
     display: flex;
     flex-direction:column;
-    width: 938px;
+    width: 1000px;
     height: 109px;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 80px;
 }
 .review-topic{
-    width: max-content;
+    width: 1000px;
     font-weight: 500;
     font-size: 48px;
     word-break: break-word;
     text-align: center;
-    max-width: 90vw;
 }
 .review-desc{
     font-weight: 400;
@@ -340,25 +340,20 @@ body{
     text-align: center;
 }
 .review-photo{
-    height:444px;
-    width:634px;
+    height:45vh;
+    width:32vw;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 5px;
 }
 .cloud{
     height:284px;
-    width: 1920px;
+    width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.three-photos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
 .order{
-    width: 1920px;
+    width: 100vw;
     background-color:#081130;
     display: flex;
     flex-direction: column;
@@ -379,6 +374,9 @@ body{
     margin: 8px;
     font-size: 15px;
     transition: 0.2s;
+}
+.form-field[placeholder="Комментарий к заказу"]{
+    max-width: 720px;
 }
 .form-field:focus {
     outline: none;
@@ -529,7 +527,7 @@ body{
     justify-content: center;
 }
 .feedbacks-main{
-    width: 1920px; 
+    width: 100vw; 
     height: 1505px; 
     background-color: #081130;
     display: flex;
@@ -611,15 +609,15 @@ body{
 .feedback-author{
     display: flex;
     flex-direction: column;
-    width: 380px;
+    width: 390px;
     height: 475px;
     align-items: center;
 }
 .author-photo{
-    height: 380px;
-    width: 380px;
+    height: 330px;
+    width: 330px;
     background-image:url(../Media/post-author1.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1000px;
     margin-bottom: 30px;
@@ -805,8 +803,8 @@ body{
 .feedback-left,
 .feedback-right,
 .feedback,
-.feedback-small {
-    transition: all 0.6s ease;
+.feedback-small{
+    transition: all 0.8s ease-in-out;
 }
 @media (max-width: 1920px) {
     .header, .header-line, .main-part, .catalog, .reviews, .feedbacks-main, .order, .cloud {
@@ -855,7 +853,12 @@ body{
         opacity: 1;
     }
 }
-
+@media (max-width: 1200px) {
+    .catalog-cards{
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+}
 @media (min-width: 921px) and (max-width: 1200px) {
     .feedbacks-rolling {
         position: relative;
@@ -1117,7 +1120,6 @@ body{
         width: 100%;
         overflow: hidden;
     }
-    
     .feedbacks {
         justify-content: center;
         align-items: center;
@@ -1127,7 +1129,6 @@ body{
     .feedback-right {
         display: none !important;
     }
-    
     .feedback {
         width: 90% !important;
         max-width: 500px !important;
@@ -1219,6 +1220,18 @@ body{
         padding: 20px 0;
         position: relative;
     }
+    .review-photo{
+        height:50vh;
+        width:45vw;
+    }
+    
+    .catalog-desc{
+        color: #000;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
     .logo, .adress, .phone {
         position: static !important;
         margin: 5px 0;
@@ -1257,8 +1270,12 @@ body{
         font-size: 18px;
     }
     .main-order {
+        margin-right: auto;
+        margin-left: auto;
         justify-content: center;
         flex-wrap: wrap;
+        flex-direction: column;
+        width: max-content;
     }
     .catalog {
         width: 100%;
@@ -1273,13 +1290,6 @@ body{
     }
     .catalog-cards {
         top: 0;
-    }
-    .three-cards {
-        width: 100%;
-        height: auto;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 0;
     }
     .catalog-card {
         width: 300px;
@@ -1315,19 +1325,9 @@ body{
         text-align: center;
         width: auto;
     }
-    .three-photos {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .review-photo {
-        width: 300px;
-        height: auto;
-        aspect-ratio: 634/444;
-    }
     .feedbacks-main {
         width: 100%;
         height: auto;
-        padding: 40px 0;
     }
     
     .feedbacks-title {
@@ -1460,7 +1460,12 @@ body{
     position: relative;
     overflow: hidden;
 }
-
+.review-photos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 .feedbacks-button:hover {
     transform: scale(1.15);
     background-color: #f5c42e;
@@ -1521,6 +1526,10 @@ body{
     .feedbacks-button-image {
         height: 16px;
         width: 8px;
+    }
+    .review-photo{
+        height:50vh;
+        width:80vw;
     }
 }
 
