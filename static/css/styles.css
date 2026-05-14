@@ -37,7 +37,7 @@ body{
     line-height: 150%;
 }
 .main-part{
-    background-image: url(../Media/other_image/background-main.jpg);
+    background-image: url(../Media/background-main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -45,13 +45,13 @@ body{
     width:100vw;
 }
 .berry{
-    background-image: url(../Media/other_image/berry.png);
+    background-image: url(../Media/berry.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
 }
 .leaf{
-    background-image: url(../Media/other_image/leaf.png);
+    background-image: url(../Media/leaf.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -62,7 +62,7 @@ body{
     flex-direction: row;
 }
 .adress-icon{
-    background-image: url(../Media/other_image/place.png);
+    background-image: url(../Media/place.png);
     background-repeat: no-repeat;
     background-size: cover;
     width:17px;
@@ -79,7 +79,7 @@ body{
     flex-direction:row;
 }
 .phone-icon{
-    background-image: url(../Media/other_image/phone.png);
+    background-image: url(../Media/phone.png);
     background-repeat: no-repeat;
     background-size: cover;
     width:19px;
@@ -340,7 +340,7 @@ body{
     text-align: center;
 }
 .review-photo{
-    height:45vh;
+    aspect-ratio: 800/576;
     width:32vw;
     background-repeat: no-repeat;
     background-size: cover;
@@ -572,7 +572,7 @@ body{
 .feedback-quotation{
     width: 40px;
     height: 40px;
-    background-image: url(../Media/other_image/quotation.png);
+    background-image: url(../Media/quotation.png);
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: 24px;
@@ -616,7 +616,7 @@ body{
 .author-photo{
     height: 330px;
     width: 330px;
-    background-image:url(../Media/other_image/post-author1.jpg);
+    background-image:url(../Media/post-author1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1000px;
@@ -707,7 +707,7 @@ body{
 .feedback-quotation-small {
     width: 32px;
     height: 32px;
-    background-image: url(../Media/other_image/quotation.png);
+    background-image: url(../Media/quotation.png);
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: 19px;
@@ -753,7 +753,7 @@ body{
 .author-photo-small {
     height: 302px;
     width: 302px;
-    background-image: url(../Media/other_image/post-author1.jpg);
+    background-image: url(../Media/post-author1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1000px;
@@ -857,6 +857,11 @@ body{
     .catalog-cards{
         margin-left: 1vw;
         margin-right: 1vw;
+    }
+}
+@media (max-width:1600px) {
+    .feedback-small{
+        display: none;
     }
 }
 @media (min-width: 921px) and (max-width: 1200px) {
