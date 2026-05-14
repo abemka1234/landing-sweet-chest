@@ -859,6 +859,11 @@ body{
         margin-right: 1vw;
     }
 }
+@media (max-width:1600px) {
+    .feedback-small{
+        display: none;
+    }
+}
 @media (min-width: 921px) and (max-width: 1200px) {
     .feedbacks-rolling {
         position: relative;
