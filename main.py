@@ -52,4 +52,5 @@ def Send_email():
     return render_template("index1.html")
 
 if __name__ == '__main__':
-    app.run(debug=True) # Запуск в режиме отладки
+    port = int(os.getenv('PORT')) # Берем порт из окружения или 5000 по умолчанию
+    app.run(debug=True, host='0.0.0.0', port=port)
