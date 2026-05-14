@@ -340,7 +340,7 @@ body{
     text-align: center;
 }
 .review-photo{
-    height:45vh;
+    aspect-ratio: 800/576;
     width:32vw;
     background-repeat: no-repeat;
     background-size: cover;
