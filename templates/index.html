@@ -137,20 +137,27 @@
         <div class="order-form">
             <div class="form-title">Чтобы сделать заказ, укажите ваши данные</div>
             <div class="form-info">Мы перезвоним в течении 15 минут, чтобы уточнить ваши пожелания</div>
-            <div class="form-interactables">
-                <div>
-                <input class="form-field" type="tel" pattern="[7] [1-9]{10}" placeholder="Номер телефона">
-                <input class="form-field" type="name" placeholder="Ваше имя">
-                </div>
-                <input class="form-field" placeholder="Комментарий к заказу" style="width:780px; height:80px;">
-                <div class="form-submit">Сделать заказ</div>
-                <div class="form-rules">
-                    <div class="rules-checkbox">
-                        <input type="checkbox" style="margin-right: 15px;">
-                        <div class="rules-text">Нажамая на кнопку, вы соглашаетесь с условиями обработки персональных данных</div>
+            <form method="POST">
+                <div class="form-interactables">
+
+                    <div>
+                    <input class="form-field" type="tel" name="username" pattern="[7] [1-9]{10}" placeholder="Номер телефона">
+                    <input class="form-field" type="name" name="phone" placeholder="Ваше имя">
+                    </div>
+
+                    <input class="form-field" name="discription" type="text" placeholder="Комментарий к заказу" style="width:780px; height:80px;">
+
+                    <button type="submit" class="form-submit">Сделать заказ</button>
+
+                    <div class="form-rules">
+                        <div class="rules-checkbox">
+                            <input type="checkbox" style="margin-right: 15px;">
+                            <div class="rules-text">Нажамая на кнопку, вы соглашаетесь с условиями обработки персональных данных</div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="footer">
             <div class="footer-links">

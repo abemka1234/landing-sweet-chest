@@ -38,7 +38,7 @@ rendered_page = template.render(cards=cards_product,instas=instas_product)
 with open('templates/index1.html', 'w', encoding="utf8") as file:
     file.write(rendered_page)
 
-#@app.route("/", methods=["GET","POST"]) #<- Если хотите вернуться к полю заполнения то  
+@app.route("/", methods=["GET","POST"])
 def Send_email():
     if request.method == "POST":
         username = request.form["username"]
@@ -48,11 +48,7 @@ def Send_email():
         msg = Message("Новый заказ", sender = email_my, recipients = [email_my])
         msg.body = f"Имя клиента: {username} \nТелефонный номер: {phone} \nОписание заказа: {discription}"
         mail.send(msg)
-        return "Заказ отправлен."
-    return render_template("index2.html")
-
-@app.route("/")#вам нужно закоментировать это и изменить экземпляр приложения
-def home():
+        return render_template("index1.html")
     return render_template("index1.html")
 
 if __name__ == '__main__':
