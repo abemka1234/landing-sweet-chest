@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <title>Сладкий сундук</title>
+</head>
+<body>
+    <div class="main-part">
+        <div class="header">
+            <div class="logo">
+                Сладкий сундук
+            </div>
+            <div class="adress">
+                <div class="adress-icon"></div>
+                <div>
+                    г. Санкт Петербург,<br>ул. Куйбышева 31
+                </div>
+            </div>
+            <div class="phone">
+                <div class="phone-icon"></div>
+                <div class="phone-text"> 
+                    <div class="phone-number">8 (812) 844-95-49</div>
+                    <div class="phone-desc">Ежедневно с 9:00 до 20:00</div>
+                </div>
+            </div>
+        </div>
+        <div class="header-line"></div>
+        <div class="main">
+            <div class="main-text">
+                <div class="main-text-info">вкуснейшие</div>
+                <div class="main-text-title">Пирожные и капкейки <br> от 150 ₽/шт. c доставкой по Санкт Петербургу</div>
+                <div class="main-text-desc">Приготовим за 3 часа в день заказа. 
+<br>Доставка на авто в холодильнике.</div>
+            </div>
+            <div class="main-order">
+                <div class="catalog-button">Перейти в каталог</div>
+                <div class="catalog-desc">9 различных <br>видов на выбор</div>
+            </div>
+        </div>
+    </div>
+    <div class="berry" style="height: 201px; width:195px; transform: rotateZ(-45.17deg); left:-75px; top:202px;"></div>
+    <div class="berry" style="height: 201px; width:195px; transform: rotateZ(-148.51deg); left:1454.36px; top:871.4px;"></div>
+    <div class="berry" style="height: 175px; width:170px; transform: rotateZ(28.32deg); left:1737px; top:109px;"></div>
+    <div class="leaf" style="height: 286px; width:275px; transform: rotateZ(-156.42deg); left:-94px; top:922px; filter:blur(13px)"></div>
+    <div class="leaf" style="height: 112px; width:108px; transform: rotateZ(92.61deg); left:252px; top:2675px; filter:blur(27px);"></div>
+    <div class="leaf" style="height: 167px; width:161px; transform: rotateZ(-180deg); left:1523px; top:2319px; filter:blur(27px);"></div>
+    <div class="berry" style="height: 174px; width:170px; transform: rotateZ(-63.54deg); left:234px; top:1522px; filter:blur(13px)"></div>
+    <div class="berry" style="height: 171px; width:167px; transform: rotateZ(-127.23deg); left:187px; top:1522px; filter:blur(13px)"></div>
+    <div class="berry" style="height: 174px; width:170px; transform: rotateZ(-63.54deg); left:234px; top:1522px; filter:blur(13px)"></div>
+    <div class="catalog">
+        <div class="catalog-info">Для любых событий и дорогих вам людей </div>
+        <div class="catalog-cards">
+            {% for card in cards %}
+                <div class="catalog-card">
+                    <div class="card-image" style="background-image: url(../static/Media/cupcaces_image/{{card.CardImage}});"></div>
+                    <div class="card-desc">
+                        <div class="product-name">{{card.CardName}}</div>
+                        <div class="product-ingredients">{{card.CardIngredients}}</div>
+                        <div class="product-price">{{card.CardPrice}}</div>
+                        <div class="product-button">Заказать</div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="feedbacks-main">
+        <div class="cloud" style="background-image: url(../static/Media/other_image/cloud_1.png); height: 264px;"></div>
+        <div class="feedbacks-title">Почитайте отзывы довольных клиентов</div>
+        <div class="feedbacks-rolling">
+            <div class="feedbacks">
+                <div class="feedback-small feedback-left">
+                    <div class="feedback-paragraph-small">
+                        <div class="feedback-quotation-small"></div>
+                        <div class="feedback-title-small">«?»</div>
+                        <div class="feedback-text-small">«Заказала капкейки, как подарок на новый год. Делать заказ было легко и приятно, ну а результат дико порадовал, друзья были в восторге. И оформление, и на вкус капкейки были просто замечательные. Обязательно буду заказывать еще)) Уже строю планы, чтобы попробовать все начинки. Они восхитительны!) Даже кушать было жалко, такая красота!)</div>
+                        <a class="feedback-link-small">Читать отзыв полностью</a>
+                    </div>
+                    <div class="feedback-author-small">
+                        <div class="author-photo-small"></div>
+                        <div class="author-name-small">Ирина Ларионова</div>
+                        <div class="author-homeland-small">Санкт-Петербург</div>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <div class="feedback-paragraph">
+                        <div class="feedback-quotation"></div>
+                        <div class="feedback-title">«Результат дико порадовал, друзья были в восторге»</div>
+                        <div class="feedback-text">«Заказала капкейки, как подарок на новый год. Делать заказ было легко и приятно, ну а результат дико порадовал, друзья были в восторге. И оформление, и на вкус капкейки были просто замечательные. Обязательно буду заказывать еще)) Уже строю планы, чтобы попробовать все начинки. Они восхитительны!) Даже кушать было жалко, такая красота!) </div>
+                        <a class="feedback-link">Читать отзыв полностью</a>
+                    </div>
+                    <div class="feedback-author">
+                        <div class="author-photo"></div>
+                        <div class="author-name">Ирина Ларионова</div>
+                        <div class="author-homeland">Санкт-Петербург</div>
+                    </div>
+                </div>
+                <div class="feedback-small feedback-right">
+                    <div class="feedback-paragraph-small">
+                        <div class="feedback-quotation-small"></div>
+                        <div class="feedback-title-small">«!»</div>
+                        <div class="feedback-text-small">«Заказала капкейки, как подарок на новый год. Делать заказ было легко и приятно, ну а результат дико порадовал, друзья были в восторге. И оформление, и на вкус капкейки были просто замечательные. Обязательно буду заказывать еще)) Уже строю планы, чтобы попробовать все начинки. Они восхитительны!) Даже кушать было жалко, такая красота!)</div>
+                        <a class="feedback-link-small">Читать отзыв полностью</a>
+                    </div>
+                    <div class="feedback-author-small">
+                        <div class="author-photo-small"></div>
+                        <div class="author-name-small">Ирина Ларионова</div>
+                        <div class="author-homeland-small">Санкт-Петербург</div>
+                    </div>
+                </div>
+            </div>
+            <div class="feedbacks-rolling-buttons">
+                <div class="feedbacks-button">
+                    <div class="feedbacks-button-image" style="background-image: url(../static/Media/other_image/left-arrow.png);"></div>
+                </div>
+                <div class="feedbacks-button">
+                    <div class="feedbacks-button-image" style="background-image: url(../static/Media/other_image/left-arrow.png);transform: rotate(180deg);"></div>
+                </div>
+            </div>
+        </div>
+        <div class="cloud" style="background-image: url(../static/Media/other_image/cloud_2.png); height: 336px;"></div>
+    </div>
+    <div class="reviews">
+        <div class="review-header">
+            <div class="review-topic">Сделали более 3.000 заказов за 2 года</div>
+            <div class="review-desc">Посмотрите фото реальных заказов из нашего instagram</div>
+        </div>
+        <div class="review-photos">
+            {% for insta in instas %}
+                <div class="review-photo" style="background-image: url(../static/Media/insta_image/{{insta.InstaImage}});"></div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="order">
+        <div class="cloud" style="background-image: url(../static/Media/other_image/cloud_1.png); height: 330px; position:relative; top:-60px;"></div>
+        <div class="order-form">
+            <div class="form-title">Чтобы сделать заказ, укажите ваши данные</div>
+            <div class="form-info">Мы перезвоним в течении 15 минут, чтобы уточнить ваши пожелания</div>
+            <form method="POST">
+                <div class="form-interactables">
+
+                    <div>
+                    <input class="form-field" type="tel" name="username" placeholder="Номер телефона">
+                    <input class="form-field" type="name" name="phone" placeholder="Ваше имя">
+                    </div>
+
+                    <input class="form-field" name="discription" type="text" placeholder="Комментарий к заказу" style="width:780px; height:80px;">
+
+                    <button type="submit" class="form-submit">Сделать заказ</button>
+
+                    <div class="form-rules">
+                        <div class="rules-checkbox">
+                            <input type="checkbox" style="margin-right: 15px;">
+                            <div class="rules-text">Нажамая на кнопку, вы соглашаетесь с условиями обработки персональных данных</div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="footer-links">
+                <a class="footer-link">Согласие на обработку данных</a>
+                <a class="footer-link">Служба поддержки</a>
+                <a class="footer-link">Политика конфиденциальности</a>
+            </div>
+            <div class="footer-info">
+                © nazvaniesaita.ru, 2054 | Название компании или ИП ОГРН 0000000000000
+            </div>
+        </div>
+    </div>
+    <script src="../static/javascript/scripts.js"></script>
+</body>
+</html>
