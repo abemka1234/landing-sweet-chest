@@ -35,7 +35,7 @@
 <br>Доставка на авто в холодильнике.</div>
             </div>
             <div class="main-order">
-                <div class="catalog-button">Перейти в каталог</div>
+                <a class="catalog-button" href="#catalog">Перейти в каталог</a>
                 <div class="catalog-desc">9 различных <br>видов на выбор</div>
             </div>
         </div>
@@ -49,7 +49,7 @@
     <div class="berry" style="height: 174px; width:170px; transform: rotateZ(-63.54deg); left:234px; top:1522px; filter:blur(13px)"></div>
     <div class="berry" style="height: 171px; width:167px; transform: rotateZ(-127.23deg); left:187px; top:1522px; filter:blur(13px)"></div>
     <div class="berry" style="height: 174px; width:170px; transform: rotateZ(-63.54deg); left:234px; top:1522px; filter:blur(13px)"></div>
-    <div class="catalog">
+    <div class="catalog" id="catalog">
         <div class="catalog-info">Для любых событий и дорогих вам людей </div>
         <div class="catalog-cards">
             
@@ -59,7 +59,7 @@
                         <div class="product-name">Кремовый замок</div>
                         <div class="product-ingredients">Нежный крем любого цвета на выбор, вафельная основа</div>
                         <div class="product-price">150 ₽/шт. </div>
-                        <div class="product-button">Заказать</div>
+                        <a class="product-button" href="#order">Заказать</a>
                     </div>
                 </div>
             
@@ -69,7 +69,7 @@
                         <div class="product-name">Малиновый рай</div>
                         <div class="product-ingredients">Воздушный крем, темная основа и ягода малины</div>
                         <div class="product-price">150 ₽/шт. </div>
-                        <div class="product-button">Заказать</div>
+                        <a class="product-button" href="#order">Заказать</a>
                     </div>
                 </div>
             
@@ -79,7 +79,7 @@
                         <div class="product-name">Фейерверк</div>
                         <div class="product-ingredients">Разноцветные крем, с бисквитной основой</div>
                         <div class="product-price">150 ₽/шт. </div>
-                        <div class="product-button">Заказать</div>
+                        <a class="product-button" href="#order">Заказать</a>
                     </div>
                 </div>
             
@@ -89,7 +89,7 @@
                         <div class="product-name">Шоколадный мир</div>
                         <div class="product-ingredients">Ореховая стружка, нежный крем и шоколадная основа</div>
                         <div class="product-price">150 ₽/шт. </div>
-                        <div class="product-button">Заказать</div>
+                        <a class="product-button" href="#order">Заказать</a>
                     </div>
                 </div>
             
@@ -99,7 +99,7 @@
                         <div class="product-name">Слезы дракона</div>
                         <div class="product-ingredients">Нежный крем любого цвета на выбор, вафельная основа</div>
                         <div class="product-price">150 ₽/шт. </div>
-                        <div class="product-button">Заказать</div>
+                        <a class="product-button" href="#order">Заказать</a>
                     </div>
                 </div>
             
@@ -109,7 +109,7 @@
                         <div class="product-name">Летняя фантазия</div>
                         <div class="product-ingredients">Украшения в форме сердец, для любимого человека</div>
                         <div class="product-price">150 ₽/шт. </div>
-                        <div class="product-button">Заказать</div>
+                        <a class="product-button" href="#order">Заказать</a>
                     </div>
                 </div>
             
@@ -119,7 +119,7 @@
                         <div class="product-name">Мыс безумия</div>
                         <div class="product-ingredients">Разноцветная основа, стружка и нежный крем</div>
                         <div class="product-price">150 ₽/шт. </div>
-                        <div class="product-button">Заказать</div>
+                        <a class="product-button" href="#order">Заказать</a>
                     </div>
                 </div>
             
@@ -129,7 +129,7 @@
                         <div class="product-name">Облачная сказка</div>
                         <div class="product-ingredients">Светлая основа, нежный крем со стружкой сверху</div>
                         <div class="product-price">150 ₽/шт. </div>
-                        <div class="product-button">Заказать</div>
+                        <a class="product-button" href="#order">Заказать</a>
                     </div>
                 </div>
             
@@ -139,7 +139,7 @@
                         <div class="product-name">Темный рыцарь</div>
                         <div class="product-ingredients">Тёмная основа, нежный крем и вкусные шарики</div>
                         <div class="product-price">150 ₽/шт. </div>
-                        <div class="product-button">Заказать</div>
+                        <a class="product-button" href="#order">Заказать</a>
                     </div>
                 </div>
             
@@ -228,7 +228,7 @@
             
         </div>
     </div>
-    <div class="order">
+    <div class="order" id="order">
         <div class="cloud" style="background-image: url(../static/Media/other_image/cloud_1.png); height: 330px; position:relative; top:-60px;"></div>
         <div class="order-form">
             <div class="form-title">Чтобы сделать заказ, укажите ваши данные</div>
@@ -237,11 +237,11 @@
                 <div class="form-interactables">
 
                     <div>
-                    <input class="form-field" type="tel" name="username"placeholder="Номер телефона">
+                    <input class="form-field" type="tel" name="username" placeholder="Номер телефона">
                     <input class="form-field" type="name" name="phone" placeholder="Ваше имя">
                     </div>
 
-                    <input class="form-field" name="discription" type="text" placeholder="Комментарий к заказу" style="width:780px; height:80px;">
+                    <input class="form-field" name="discription" type="text" placeholder="Комментарий к заказу" style="width:70vw; height:80px;">
 
                     <button type="submit" class="form-submit">Сделать заказ</button>
 
