@@ -51,11 +51,8 @@ python main.py
 
 ![Фотка сайта](/Screenshots/1.jpg)
 
-![Фотка сайта](/Screenshots/1.jpg)
+![Пример письма](/Screenshots/2.jpg)
 
-![Фотка сайта](/Screenshots/1.jpg)
+![Пример таблицы](/Screenshots/3.jpg)
 
-![Фотка сайта](/Screenshots/1.jpg)
-
-![Фотка сайта](/Screenshots/1.jpg)
 
