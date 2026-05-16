@@ -15,7 +15,7 @@ python -r requirements.txt
 RESEND_API_KEY="Апи ключ от сервиса Resend"
 EMAIL_FROM=onboarding@resend.dev(Не менять)
 EMAIL_TO="Ваша почта"
-PORT="Порт сайта"
+PORT="Порт сайта(обычно 5000)"
 
 [Ссылка на сервис Resend](https://resend.com/)
 
@@ -30,3 +30,5 @@ PORT="Порт сайта"
 ```
 python main.py
 ```
+
+Все готово! для того чтобы увидеть страницу нужно перейти по [этому](http://127.0.0.1:5000) адресу
