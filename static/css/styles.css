@@ -431,7 +431,7 @@ body{
 }
 .order-form{
     align-items: center;
-    width: 982px;
+    width: 70vw;
     max-width: 92%;
     height: max-content;
     display: flex;
