@@ -6,6 +6,7 @@
     box-sizing: border-box;
     transition: all 0.8s ease-in-out;
     overflow: hidden;
+    text-decoration: none;
 }
 html{
     overflow-y: visible;
@@ -127,6 +128,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    height: max-content;
 }
 .main-text-info{
     text-align: center;
@@ -171,6 +173,7 @@ body{
     background-color: #FED84C;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-top: 3px;
 }
 .catalog-button:hover {
     transform: translateY(-3px);
@@ -363,8 +366,8 @@ body{
 }
 .form-field{
     padding: 14px 18px;
-    width: 100%;
-    max-width: 340px;
+    width: 50vw;
+    max-width: 50vw;
     height: auto;
     min-height: 52px;
     border-radius: 8px;
@@ -525,6 +528,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 100px;
+    vertical-align: top;
 }
 .feedbacks-main{
     width: 100vw; 
@@ -1358,7 +1363,7 @@ body{
         text-align: center;
     }
     .form-field {
-        max-width: 100%;
+        max-width: 50vw;
         margin: 6px 0;
         width: 100%;
     }
