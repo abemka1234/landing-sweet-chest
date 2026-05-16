@@ -38,6 +38,8 @@ body{
     line-height: 150%;
 }
 .main-part{
+    margin-left: auto;
+    margin-right: auto;
     background-image: url(../Media/background-main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -366,8 +368,8 @@ body{
 }
 .form-field{
     padding: 14px 18px;
-    width: 50vw;
-    max-width: 50vw;
+    width: 40vw;
+    max-width: 40vw;
     height: auto;
     min-height: 52px;
     border-radius: 8px;
@@ -377,9 +379,11 @@ body{
     margin: 8px;
     font-size: 15px;
     transition: 0.2s;
+    margin-left: auto;
+    margin-right: auto;
 }
 .form-field[placeholder="Комментарий к заказу"]{
-    max-width: 720px;
+    max-width: 60vw;
 }
 .form-field:focus {
     outline: none;
@@ -411,6 +415,7 @@ body{
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
 }
 .form-interactables > div {
@@ -1349,7 +1354,7 @@ body{
         width: 100%;
     }
     .order-form {
-        width: 90%;
+        max-width: 90vw;
         padding: 30px 20px;
     }
     .form-title {
@@ -1372,8 +1377,9 @@ body{
         max-width: 100%;
     }
     .form-interactables > div {
-        flex-direction: column;
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .footer-links {
         width: 100%;
