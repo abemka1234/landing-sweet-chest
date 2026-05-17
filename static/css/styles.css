@@ -763,7 +763,7 @@ body{
 .author-photo-small {
     height: 302px;
     width: 302px;
-    background-image: url(../Media/post-author1.jpg);
+    background-image: url(../Media/post-author3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1000px;
@@ -1316,7 +1316,7 @@ body{
         height: auto;
         aspect-ratio: 380/245;
     }
-    .card-desc {
+    .desc {
         padding: 20px;
     }
     .reviews {

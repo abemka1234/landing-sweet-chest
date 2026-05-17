@@ -19,6 +19,11 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 # Читаем данные из Excel
 cards_product = pandas.read_excel('cards.xlsx', sheet_name='Cards').to_dict("records")
 instas_product = pandas.read_excel('cards.xlsx', sheet_name='Insta').to_dict("records")
+coments = pandas.read_excel('cards.xlsx', sheet_name='Coments').to_dict("records")
+
+coment1 = coments[0]
+coment2 = coments[1]
+coment3 = coments[2]
 
 # Генерируем HTML страницу
 env = Environment(
@@ -27,7 +32,7 @@ env = Environment(
 )
 
 template = env.get_template('index.html')
-rendered_page = template.render(cards=cards_product, instas=instas_product)
+rendered_page = template.render(cards=cards_product, instas=instas_product, coment1=coment1, coment2=coment2, coment3=coment3)
 
 with open('templates/index1.html', 'w', encoding="utf8") as file:
     file.write(rendered_page)
