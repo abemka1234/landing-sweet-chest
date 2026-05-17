@@ -401,7 +401,6 @@ body{
     outline: none;
 }
 .form-title{
-    width:880px;
     max-width: 90vw;
     height: auto;
     font-weight: 700;
@@ -564,7 +563,7 @@ body{
     flex-direction: row;
 }
 .feedback{
-    width: 1180px;
+    width: 68vw;
     height: 615px;
     border-radius: 5px;
     background-color: #FFFFFF;
@@ -577,7 +576,7 @@ body{
 .feedback-paragraph{
     display: flex;
     flex-direction: column;
-    margin-right: 115px;
+    width: 35vw;
 }
 .feedback-quotation{
     width: 40px;
@@ -622,6 +621,7 @@ body{
     width: 390px;
     height: 475px;
     align-items: center;
+    margin-left: 80px;
 }
 .author-photo{
     height: 330px;
@@ -697,7 +697,7 @@ body{
     transform: translateX(3px);
 }
 .feedback-small{
-    width: 934px;
+    width: 20vw;
     height: 486px;
     border-radius: 4px;
     background-color: #FFFFFF;
@@ -822,6 +822,10 @@ body{
         width: 100%;
         overflow-x: hidden;
     }
+    .feedback-small{
+        display: flex;
+        width: 45vw;
+    }
 }
 @media (min-width: 1201px) {
     .feedbacks-rolling {
@@ -872,6 +876,9 @@ body{
 @media (max-width:1600px) {
     .feedback-small{
         display: none;
+    }
+    .feedback{
+        width: 90vw;
     }
 }
 @media (min-width: 921px) and (max-width: 1200px) {
@@ -1358,7 +1365,6 @@ body{
         padding: 30px 20px;
     }
     .form-title {
-        width: 100%;
         font-size: 28px;
         text-align: center;
         height: auto;
