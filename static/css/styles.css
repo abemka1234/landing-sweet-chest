@@ -537,8 +537,7 @@ body{
     vertical-align: top;
 }
 .feedbacks-main{
-    width: 100vw; 
-    height: 1505px; 
+    width: 100vw;  
     background-color: #081130;
     display: flex;
     flex-direction: column;
