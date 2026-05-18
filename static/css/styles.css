@@ -10,6 +10,7 @@
 }
 html{
     overflow-y: visible;
+    scroll-behavior: smooth;
 }
 body{
     display: flex;
@@ -435,7 +436,7 @@ body{
 }
 .order-form{
     align-items: center;
-    width: 70vw;
+    width: 60vw;
     max-width: 92%;
     height: max-content;
     display: flex;
