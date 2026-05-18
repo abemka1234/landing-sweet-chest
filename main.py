@@ -5,34 +5,30 @@ from dotenv import load_dotenv
 from flask import Flask, render_template, request
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-# Загружаем переменные окружения
 load_dotenv()
 
-# Получаем данные из .env
 RESEND_API_KEY = os.getenv("RESEND_API_KEY")
-EMAIL_FROM = os.getenv("EMAIL_FROM")  # Например: onboarding@resend.dev или ваш подтвержденный email
-EMAIL_TO = os.getenv("EMAIL_TO")      # Ваш email для получения заказов
+EMAIL_FROM = os.getenv("EMAIL_FROM")
+EMAIL_TO = os.getenv("EMAIL_TO")
 
 app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 
-# Читаем данные из Excel
 cards_product = pandas.read_excel('cards.xlsx', sheet_name='Cards').to_dict("records")
 instas_product = pandas.read_excel('cards.xlsx', sheet_name='Insta').to_dict("records")
 coments = pandas.read_excel('cards.xlsx', sheet_name='Coments').to_dict("records")
 
-coment1 = coments[0]
-coment2 = coments[1]
-coment3 = coments[2]
+coment_first = coments[0]
+coment_second = coments[1]
+coment_third = coments[2]
 
-# Генерируем HTML страницу
 env = Environment(
     loader=FileSystemLoader('templates'),
     autoescape=select_autoescape(['html', 'xml'])
 )
 
 template = env.get_template('index.html')
-rendered_page = template.render(cards=cards_product, instas=instas_product, coment1=coment1, coment2=coment2, coment3=coment3)
+rendered_page = template.render(cards=cards_product, instas=instas_product, coment1=coment_first, coment2=coment_second, coment3=coment_third)
 
 with open('templates/index1.html', 'w', encoding="utf8") as file:
     file.write(rendered_page)
@@ -79,7 +75,6 @@ def Send_email():
         phone = request.form["phone"]
         discription = request.form["discription"]
         
-        # Отправляем email
         send_email_resend(username, phone, discription)
         
         return render_template("index1.html")
