@@ -29,6 +29,7 @@ body{
     position: absolute;
     left: 370px;
     top: 49px;
+    color: #FFF;
 }
 .adress{
     font-size: 12px;
@@ -103,6 +104,7 @@ body{
     font-size: 20px;
     font-weight: 700;
     line-height: 152%;
+    color: #FFF;
 }
 .phone-desc{
     font-weight: 400;
@@ -383,9 +385,6 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.form-field[placeholder="Комментарий к заказу"]{
-    max-width: 60vw;
-}
 .form-field:focus {
     outline: none;
     box-shadow: 0 0 0 2px #FED84C;
@@ -491,7 +490,6 @@ body{
 .footer{
     margin-bottom: 80px;
     font-weight: 400;
-    color: #7E868E;
     line-height: 150%;
     letter-spacing: 0%;
     font-size: 12px;
@@ -500,6 +498,7 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
+    color: #7E868E;
 }
 .footer-links{
     display: flex;
@@ -514,6 +513,9 @@ body{
     width: auto;
     text-align: center;
     padding: 0 20px;
+}
+.footer-link{
+    color: #7E868E;
 }
 .rules-checkbox{
     display: flex;
@@ -755,14 +757,14 @@ body{
 .feedback-author-small {
     display: flex;
     flex-direction: column;
-    width: 302px;
-    height: 377px;
+    width: 330px;
+    height: 450px;
     align-items: center;
 }
 
 .author-photo-small {
-    height: 302px;
-    width: 302px;
+    height: 260px;
+    width: 260px;
     background-image: url(../Media/post-author3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -925,6 +927,8 @@ body{
     .feedback-author {
         width: 200px !important;
         height: auto !important;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .author-photo {
@@ -1055,6 +1059,8 @@ body{
     .feedback-author {
         width: 180px !important;
         height: auto !important;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .author-photo {
@@ -1192,6 +1198,8 @@ body{
     .feedback-author {
         width: 100% !important;
         height: auto !important;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .author-photo {
@@ -1231,9 +1239,15 @@ body{
     .feedback {
         margin: 0 auto 30px auto !important;
     }
+    .berry, .leaf {
+        display: none;
+    }
 }
 
 @media (max-width: 960px) {
+    .berry, .leaf {
+        display: none;
+    }
     .header {
         width: 100%;
         height: auto;
@@ -1378,10 +1392,6 @@ body{
         margin: 6px 0;
         width: 100%;
     }
-    .form-field[placeholder="Комментарий к заказу"] {
-        width: 100%;
-        max-width: 100%;
-    }
     .form-interactables > div {
         width: 100%;
         display: flex;
@@ -1401,9 +1411,6 @@ body{
         width: 100% !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
-    }
-    .berry, .leaf {
-        display: none;
     }
     .feedback-left,
     .feedback-right {

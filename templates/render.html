@@ -9,9 +9,9 @@
 <body>
     <div class="main-part">
         <div class="header">
-            <div class="logo">
+            <a href="#" class="logo">
                 Сладкий сундук
-            </div>
+            </a>
             <div class="adress">
                 <div class="adress-icon"></div>
                 <div>
@@ -21,7 +21,7 @@
             <div class="phone">
                 <div class="phone-icon"></div>
                 <div class="phone-text"> 
-                    <div class="phone-number">8 (812) 844-95-49</div>
+                    <a class="phone-number" href="tel:8(812)844-95-49">8 (812) 844-95-49</a>
                     <div class="phone-desc">Ежедневно с 9:00 до 20:00</div>
                 </div>
             </div>
@@ -197,7 +197,7 @@
                 </div>
             </div>
         </div>
-        <div class="cloud" style="background-image: url(../static/Media/other_image/cloud_2.png); height: 336px;  transition: all 0s ease; position:relative;"></div>
+        <div class="cloud" style="background-image: url(../static/Media/other_image/cloud_2.png); height: 336px;  transition: none;"></div>
     </div>
     <div class="reviews">
         <div class="review-header">
@@ -227,23 +227,22 @@
         </div>
     </div>
     <div class="order" id="order" style="position: relative;">
+        <div class="leaf" style="width: 106.67px; height: 111.52px; transform: rotateZ(-94.95deg); left: 274px; top: 226px; filter: blur(6.5px); z-index: 1;"></div>
+        <div class="leaf" style="width: 146.55px; height: 153.21px; transform: rotateZ(76.12deg); left: 1515px; top: 832px; filter: blur(6.5px); z-index: 2;"></div>
+        <div class="berry" style="width: 167.13px; height: 171.29px; transform: rotateZ(-127.23deg); left: 187px; top: 795px; z-index: 3;"></div>
+        <div class="berry" style="width: 152.18px; height: 155.97px; transform: rotateZ(31.18deg); left: 1483px; top: 194px; z-index: 4;"></div>
         <div class="cloud" style="background-image: url(../static/Media/other_image/cloud_1.png); height: 330px; position:relative; top:-60px;"></div>
         <div class="order-form">
             <div class="form-title">Чтобы сделать заказ, укажите ваши данные</div>
             <div class="form-info">Мы перезвоним в течении 15 минут, чтобы уточнить ваши пожелания</div>
-                    <div class="leaf" style="width: 106.67px; height: 111.52px; transform: rotateZ(-94.95deg); left: 274px; top: 226px; filter: blur(6.5px); z-index: 1;"></div>
-        <div class="leaf" style="width: 146.55px; height: 153.21px; transform: rotateZ(76.12deg); left: 1515px; top: 832px; filter: blur(6.5px); z-index: 2;"></div>
-        <div class="berry" style="width: 167.13px; height: 171.29px; transform: rotateZ(-127.23deg); left: 200px; top: 805px; z-index: 3;"></div>
-        <div class="berry" style="width: 152.18px; height: 155.97px; transform: rotateZ(31.18deg); left: 1483px; top: 194px; z-index: 4;"></div>
             <form method="POST">
                 <div class="form-interactables">
 
                     <div>
                     <input class="form-field" type="tel" name="username" placeholder="Номер телефона">
                     <input class="form-field" type="name" name="phone" placeholder="Ваше имя">
-                    </div>
-
                     <input class="form-field" name="discription" type="text" placeholder="Комментарий к заказу">
+                    </div>
 
                     <button type="submit" class="form-submit">Сделать заказ</button>
 
@@ -259,9 +258,9 @@
         </div>
         <div class="footer">
             <div class="footer-links">
-                <a class="footer-link">Согласие на обработку данных</a>
-                <a class="footer-link">Служба поддержки</a>
-                <a class="footer-link">Политика конфиденциальности</a>
+                <a class="footer-link" href="#">Согласие на обработку данных</a>
+                <a class="footer-link" href="#">Служба поддержки</a>
+                <a class="footer-link" href="#">Политика конфиденциальности</a>
             </div>
             <div class="footer-info">
                 © nazvaniesaita.ru, 2054 | Название компании или ИП ОГРН 0000000000000
